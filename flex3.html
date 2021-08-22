@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex3 challenge</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        font-size: larger;
+       
+        /* background-color: black; */
+
+      }
+      body{
+        background-color: rgba(180, 21, 77, 0.713);
+        margin:30px 15px 10px 15px;
+      }
+
+    .vertical{
+      background-color: rgba(220, 3, 3, 0.716);
+      height: 37.5pc;
+      width: 15%;
+      text-align: center;
+      float:left;
+    }
+    .three-box{
+     
+    }
+    .three{
+      display: flex;
+      justify-content: space-between;
+      padding-left:10px;
+      padding-top:10px;
+    }
+    header{
+      background-color: #FF9933;
+      height:200px;
+      /* justify-content: space-around; */
+    }
+    Article{
+     height:200px;
+     background-color:white;
+    }
+    footer{
+     height:200px;
+     background-color: rgb(71, 235, 49);
+     
+    }
+    img{
+      margin-left:auto;
+      margin-right: auto;
+    }
+    @media (max-width:700px) {
+      img{
+        height:170px;
+        margin:auto
+      }
+      header,Article,footer{
+        height:200px;
+      }
+    }
+    p{
+      margin:auto;
+    }
+    .vertical > p{
+      transform: rotate(270deg);
+      margin-top:312px;      
+    }
+    </style>
+  </head>
+  <body>
+    <div class="vertical"><p>Indian_Flag</p></div>
+    <div class="three-box">
+      <header class="three"><p>JAI</p></header>
+      <Article class="three" id="article">
+        <img src="flag_chakra.png" alt="flag_chakra ">
+      </Article>
+      <footer class="three"><p>HIND</p></footer>
+    </div>
+  </body>
+</html>
